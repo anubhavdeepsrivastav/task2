@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding:0;
+            box-sizing: border-box;
+        }
+     .header{
+        display:flex;
+        background-color: #284b7a;
+       margin-top: 10px;
+       
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+
+     }
+     .header:nth-child(1){
+        justify-content: left;
+        margin-top: 20px;
+     }
+     .header:nth-child(1) h1 {
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%) ;
+     }
+     h1{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        color: aliceblue;
+     }
+     img{
+        height:90px;
+        width:300px;
+     }
+     
+     .container{
+        display:flex;
+        justify-content: center;
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        
+     }
+
+     .field-group{
+        display:flex;
+        border: 1px solid black;
+        width:35%;
+        height:20px;
+
+     }
+     .field-group p{
+        border-right: 1px solid black;
+        width:50%;
+        height:100%;
+        padding-left: 10px;
+     }
+     .field-group input{
+        padding:0px;
+        width:50%;
+        outline: none;
+        border:none;
+      
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="header"><img src="Screenshot 2024-07-09 114632.png" alt=""><h1>UTKARSH SMALL FINANCE BANK</h1></div>
+    <div class="header"><h1>Quaterly Loan Account Statement</h1></div>
+    <div class="header"> <h1>Period-From:- per to:-</h1></div>
+    <div class="container">
+        <div class="field-group">
+            <p>Name of Borrower</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>  Loan Account Number</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>Date of Disbursement</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>Loan Amount</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>EMI Amount</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>Principle Amount Paid till Date</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>Interest Amount Paid till Date</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>No. Of EMIs Left</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>Annualized Rate of Interest</p>
+            <input type="text">
+        </div>
+        <div class="field-group">
+            <p>APR for entire Loan Tenor</p>
+            <input type="text">
+        </div>
+    </div>
+</body>
+</html>
